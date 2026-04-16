@@ -461,7 +461,7 @@ export default function ProposalPage() {
                   $4,250
                 </p>
                 <p className="text-sm text-ink-muted pt-1">
-                  Invoiced via GoHighLevel. 50% due at kickoff, 50% at launch.
+                  50% due at kickoff, 50% at launch.
                 </p>
               </div>
             </FI>
