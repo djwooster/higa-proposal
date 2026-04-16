@@ -187,6 +187,24 @@ For a new proposal, replicate these sections in order:
 
 ---
 
+## Scaling to Multiple Proposals
+
+The intended long-term structure is one repo, one deploy, one proposal per route:
+
+```
+app/
+  proposals/
+    higa-hvac/page.tsx
+    next-client/page.tsx
+  page.tsx  ← Pivot Studio landing page (future)
+```
+
+Shared components (`Eyebrow`, `Rule`, `Reveal`, `FI`) should live in `components/proposal/` once a second proposal is added. Each `page.tsx` is then just a data file — import the components, swap the content.
+
+URL privacy: proposals are public by default. Use an obfuscated slug (e.g. `/proposals/client-name-x9k2`) if the client relationship warrants it, or add Next.js middleware for token-based protection.
+
+---
+
 ## Content Guidelines
 
 - **Eyebrow labels** name the category (e.g. "Lead Generation & Qualification")
